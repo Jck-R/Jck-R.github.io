@@ -9,17 +9,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="Styles/index.css">
   </head>
 
   <body>
 
-  <div class="div-sec div-sec-2cols">
+  <div class="div-sec div-profile-2cols">
     <div class="div-portrait">
-      <img class="portrait" src="src/photo.jpg">
+      <img class="portrait" src="Images/photo.jpg">
     </div>
 
-    <div class="div-profile">
+    <div class="div-text">
       <div class="div-text">
         <h1 class="name">
           Ziqi Rong
@@ -68,78 +68,95 @@
   </div>
 
   <div class="div-sec">
-    <div class="div-text">
-      <h2>
-        Research Interests
-      </h2>
-      <p class="text">
-        Machine Learning, Bioinformatics, Computatioal Biology.
-      </p>
-    </div>
+    <hr>
   </div>
-  
-  <div class="div-sec">
+
+  <div class="div-sec div-menu">
     <div class="div-text">
-      <h2>
-        Publications
-      </h2>
-      <p class="text">
-        Lian, Q., Ma, J., Hua, K., Rong, Z., Cai, J., Jiang, X., ... & Xin, H. (2022). Total-mRNA-Aware Analysis for Droplet-Based Single Cell Sequencing. (preprint)
-        <a class="link" href="https://doi.org/10.21203/rs.3.rs-2211167/v1">
-          <i class="fa-solid fa-link"></i>
-        </a>
-      </p>
+      <button class="button-menu" id="research" onclick="show_page('research')">RESEARCH</button>
+    </div>
+    <div class="div-text">
+      <button class="button-menu" id="about" onclick="show_page('about')">ABOUT</button>
     </div>
   </div>
 
-  <div class="div-sec">
-    <div class="div-text">
-      <h2>
-        Experience
-      </h2>
-      <p class="text">
-        <strong>Liu Lab at UMich</strong> <a class="link" href="https://jieliu6.github.io"><i class="fa-solid fa-link"></i></a><br>
-        12/2022 - Present<br>
-        <em>Student Research Assistant</em>
-      </p>
-      <p class="text">
-        <strong>Computational Biology, Bioinformatics and Biological Computing Lab (NovelLab) at SJTU</strong> <a class="link" href="https://gift.sjtu.edu.cn/xhy_en/main.htm"><i class="fa-solid fa-link"></i></a><br>
-        01/2022 - Present<br>
-        <em>Undergraduate Researcher</em>
-      </p>
-      <p class="text">
-        <strong>TerraQuanta</strong> <a class="link" href="https://www.terraqt.com/en"><i class="fa-solid fa-link"></i></a><br>
-        01/2021 - 02/2021<br>
-        <em>AI Product Engineer Intern</em>
-      </p>
+  <div class="page" id="research">
+    <div class="div-sec">
+      <div class="div-text">
+        <h2>
+          Research Interests
+        </h2>
+        <p class="text">
+          Machine Learning, Bioinformatics, Computatioal Biology.
+        </p>
+      </div>
+    </div>
+    
+    <div class="div-sec">
+      <div class="div-text">
+        <h2>
+          Publications
+        </h2>
+        <p class="text">
+          Lian, Q., Ma, J., Hua, K., Rong, Z., Cai, J., Jiang, X., ... & Xin, H. (2022). Total-mRNA-Aware Analysis for Droplet-Based Single Cell Sequencing. (preprint)
+          <a class="link" href="https://doi.org/10.21203/rs.3.rs-2211167/v1">
+            <i class="fa-solid fa-link"></i>
+          </a>
+        </p>
+      </div>
     </div>
   </div>
 
-  <div class="div-sec">
-    <div class="div-text">
-      <h2>
-        Education
-      </h2>
-      <p class="text">
-        <strong>University of Michigan</strong><br>
-        09/2022 - 04/2024<br>
-        <em>Master of Science in Information, Data Science Track</em>
-      </p>
-      <p class="text">
-        <strong>Shanghai Jiao Tong University</strong><br>
-        09/2019 - 08/2023<br>
-        <em>Bachelor of Science in Electrical and Computer Engineering</em>
-      </p>
+  <div class="page" id="about">
+    <div class="div-sec">
+      <div class="div-text">
+        <h2>
+          Experience
+        </h2>
+        <p class="text">
+          <strong>Liu Lab at UMich</strong> <a class="link" href="https://jieliu6.github.io"><i class="fa-solid fa-link"></i></a><br>
+          Dec 2022 - Present<br>
+          <em>Student Research Assistant</em>
+        </p>
+        <p class="text">
+          <strong>Computational Biology, Bioinformatics and Biological Computing Lab (NovelLab) at SJTU</strong> <a class="link" href="https://gift.sjtu.edu.cn/xhy_en/main.htm"><i class="fa-solid fa-link"></i></a><br>
+          Jan 2022 - Present<br>
+          <em>Undergraduate Researcher</em>
+        </p>
+        <p class="text">
+          <strong>TerraQuanta</strong> <a class="link" href="https://www.terraqt.com/en"><i class="fa-solid fa-link"></i></a><br>
+          Jan 2021 - Feb 2021<br>
+          <em>AI Product Engineer Intern</em>
+        </p>
+      </div>
     </div>
-  </div>
 
-  <div class="div-sec">
-    <div class="div-text">
-      <h2>
-        Misc
-      </h2>
-      <p class="text">
-        I love the National Parks! It's absolutely America's best idea. Here are the National Parks I have visited: Joshua Tree NP, Zion NP, Bryce Canyon NP, Grand Canyon NP. Visit my blog website to see more! <i class="fa-regular fa-face-smile"></i>
+    <div class="div-sec">
+      <div class="div-text">
+        <h2>
+          Education
+        </h2>
+        <p class="text">
+          <strong>University of Michigan</strong><br>
+          Sep 2022 - Apr 2024<br>
+          <em>Master of Science in Information, Data Science Track</em>
+        </p>
+        <p class="text">
+          <strong>Shanghai Jiao Tong University</strong><br>
+          Sep 2019 - Aug 2023<br>
+          <em>Bachelor of Science in Electrical and Computer Engineering</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="div-sec">
+      <div class="div-text">
+        <h2>
+          Misc
+        </h2>
+        <p class="text">
+          I love the National Parks! It's absolutely America's best idea. Here are the National Parks I have visited: Joshua Tree NP, Zion NP, Bryce Canyon NP, Grand Canyon NP. <i class="fa-regular fa-face-smile"></i>
+      </div>
     </div>
   </div>
 
@@ -147,6 +164,8 @@
     <hr>
     <i class="fa-regular fa-copyright"></i> 2023 Ziqi Rong. Last updated on March 2023.
   </footer>
+
+  <script src="Scripts/script.js"></script>
 
   </body>
 </html>

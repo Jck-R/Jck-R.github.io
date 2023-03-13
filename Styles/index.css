@@ -1,4 +1,14 @@
+/* Font */
+* {
+    font-family: -apple-system, "Roboto", sans-serif;
+}
+
 /* div */
+.page {
+    opacity: 0.1;
+    transition: opacity 1s;
+}
+
 .div-sec {
     min-width: 750px;
     max-width: 1000px;
@@ -9,7 +19,7 @@
     display: block;
 }
 
-.div-sec-2cols {
+.div-profile-2cols {
     display: grid;
     grid-template-columns: 3fr 7fr;
     column-gap: 50px;
@@ -19,8 +29,18 @@
     width: 100%;
 }
 
-.div-profile {
-    width: 100%;
+.div-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.div-menu>div {
+    height: 50px;
+    width: 150px;
+    text-align: center;
 }
 
 .div-text {
@@ -38,9 +58,34 @@
     border-radius: 30px;
 }
 
+/* button */
+.button-menu {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: opacity 0.2s,
+        color 0.2s,
+        background-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.button-menu:hover {
+    color: white;
+    background: darkgray;
+    box-shadow: 10px 10px 50px darkgray;
+}
+
+.button-menu:active {
+    opacity: 0.5;
+}
+
 /* h1 */
 h1 {
-    font-family: -apple-system, "Roboto", sans-serif;
     width: 100%;
     text-align: justify;
 }
@@ -52,15 +97,13 @@ h1 {
 
 /* h2 */
 h2 {
-    font-family: -apple-system, "Roboto", sans-serif;
     width: 100%;
-    font-size: 24;
+    font-size: 24px;
     color: black;
 }
 
 /* p */
 p {
-    font-family: -apple-system, "Roboto", sans-serif;
     font-size: 18px;
     color: black;
     width: 100%;
@@ -70,7 +113,7 @@ p {
 
 .school {
     font-size: 18px;
-    color: gray;
+    color: dimgray;
 }
 
 .text {
@@ -104,12 +147,11 @@ p {
 footer {
     min-width: 750px;
     max-width: 1000px;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    font-family: -apple-system, "Roboto", sans-serif;
     font-size: 12px;
-    color: gray;
+    color: darkgray;
     text-align: center;
 }
